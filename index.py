@@ -5,11 +5,11 @@ from datetime import date
 
 
 # walking
-donkey = Donkey("Donkey Kong", "Domestic Donkey")
-llama = Llama("Larry", "Llama glama")
-goat = Goat("Billy", "Domestic Goat")
-chicken = Chicken("Henrietta", "Hen")
-cow = Cow("MooMoo", "Holstein Cow")
+donkey = Donkey("Donkey Kong", "Domestic Donkey", "midday")
+llama = Llama("Larry", "Llama glama", "afternoon")
+goat = Goat("Billy", "Domestic Goat", "afternoon")
+chicken = Chicken("Henrietta", "Hen", "midday")
+cow = Cow("MooMoo", "Holstein Cow", "morning")
 # slithering
 copperhead = Copperhead("Slither", "American Copperhead")
 ratsnake = RatSnake("Ratty", "Rat Snake")
@@ -22,3 +22,6 @@ goldfish = Goldfish("Goldie", "Common Goldfish")
 catfish = Catfish("Whiskers", "Channel Catfish")
 koi = Koi("Koiboi", "Japanese Koi")
 trout = Trout("Trouty", "Rainbow Trout")
+
+
+print(f'{chicken.name} the {chicken.species} is available to pet during the {chicken.shift} shift.')
