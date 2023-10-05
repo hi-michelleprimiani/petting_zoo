@@ -5,23 +5,23 @@ from datetime import date
 
 
 # walking
-donkey = Donkey("Donkey Kong", "Domestic Donkey", "midday")
-llama = Llama("Larry", "Llama glama", "afternoon")
-goat = Goat("Billy", "Domestic Goat", "afternoon")
-chicken = Chicken("Henrietta", "Hen", "midday")
-cow = Cow("MooMoo", "Holstein Cow", "morning")
+llama = Llama("Larry", "Llama glama", "afternoon", "Llama Chow")
+donkey = Donkey("Donkey Kong", "Domestic Donkey", "midday", "Hay")
+goat = Goat("Billy", "Domestic Goat", "afternoon", "Goat Feed")
+chicken = Chicken("Henrietta", "Hen", "midday", "Chicken Feed")
+cow = Cow("MooMoo", "Holstein Cow", "morning", "Grass")
 # slithering
-copperhead = Copperhead("Slither", "American Copperhead")
-ratsnake = RatSnake("Ratty", "Rat Snake")
-python = Python("Monty", "Ball Python")
-anaconda = Anaconda("Anna", "Green Anaconda")
-cobra = Cobra("King", "King Cobra")
+copperhead = Copperhead("Slither", "American Copperhead", "Mice")
+ratsnake = RatSnake("Ratty", "Rat Snake", "Rats")
+python = Python("Monty", "Ball Python", "Small Mammals")
+anaconda = Anaconda("Anna", "Green Anaconda", "Large Rodents")
+cobra = Cobra("King", "King Cobra", "Small Mammals")
 # swimming
-bass = Bass("Bassy", "Largemouth Bass")
-goldfish = Goldfish("Goldie", "Common Goldfish")
-catfish = Catfish("Whiskers", "Channel Catfish")
-koi = Koi("Koiboi", "Japanese Koi")
-trout = Trout("Trouty", "Rainbow Trout")
+bass = Bass("Bassy", "Largemouth Bass", "Fish Food")
+goldfish = Goldfish("Goldie", "Common Goldfish", "Goldfish Flakes")
+catfish = Catfish("Whiskers", "Channel Catfish", "Catfish Pellets")
+koi = Koi("Koiboi", "Japanese Koi", "Koi Food")
+trout = Trout("Trouty", "Rainbow Trout", "Fish Pellets")
 
 
-print(f'{chicken.name} the {chicken.species} is available to pet during the {chicken.shift} shift.')
+print(copperhead.feed())
