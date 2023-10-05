@@ -9,5 +9,8 @@ class Koi:
         self.swimming = True
         self.food = food
 
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
     def feed(self):
         return (f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
