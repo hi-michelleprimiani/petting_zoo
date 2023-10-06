@@ -3,7 +3,7 @@ from animals.slithering import Copperhead, RatSnake, Python, Anaconda, Cobra
 from animals.walking import Donkey, Llama, Goat, Chicken, Cow
 from attractions import PettingZoo, SnakePit, Wetlands
 from datetime import date
-
+from animals import Animal
 
 # walking
 llama = Llama("Larry", "Llama glama", "afternoon", "Llama Chow", 1234)
@@ -23,6 +23,7 @@ goldfish = Goldfish("Goldie", "Common Goldfish", "Goldfish Flakes", 2468)
 catfish = Catfish("Whiskers", "Channel Catfish", "Catfish Pellets", 3579)
 koi = Koi("Koiboi", "Japanese Koi", "Koi Food", 4680)
 trout = Trout("Trouty", "Rainbow Trout", "Fish Pellets", 5791)
+
 # attractions
 varmint_village = PettingZoo(
     "Varmint Village", "cute and fuzzy critters to cuddle")
@@ -51,6 +52,7 @@ critter_cove.add_animal(koi)
 critter_cove.add_animal(trout)
 
 
+cow.feed()
 # petting zoo
 # print(
 #   f"{varmint_village.attraction_name} is where you'll find {varmint_village.description} like,")
