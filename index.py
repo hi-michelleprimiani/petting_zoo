@@ -1,4 +1,4 @@
-from animals.swimming import Bass, Goldfish, Catfish, Koi, Trout
+from animals.swimming import Bass, Goldfish, Catfish, Koi, Trout, Mallard
 from animals.slithering import Copperhead, RatSnake, Python, Anaconda, Cobra
 from animals.walking import Donkey, Llama, Goat, Chicken, Cow
 from attractions import PettingZoo, SnakePit, Wetlands
@@ -23,6 +23,7 @@ goldfish = Goldfish("Goldie", "Common Goldfish", "Goldfish Flakes", 2468)
 catfish = Catfish("Whiskers", "Channel Catfish", "Catfish Pellets", 3579)
 koi = Koi("Koiboi", "Japanese Koi", "Koi Food", 4680)
 trout = Trout("Trouty", "Rainbow Trout", "Fish Pellets", 5791)
+mallard = Mallard("Ducky", "Duck", "Poop", 4509)
 
 # attractions
 varmint_village = PettingZoo(
@@ -50,9 +51,9 @@ critter_cove.add_animal(goldfish)
 critter_cove.add_animal(catfish)
 critter_cove.add_animal(koi)
 critter_cove.add_animal(trout)
+critter_cove.add_animal(mallard)
 
 
-cow.feed()
 # petting zoo
 # print(
 #   f"{varmint_village.attraction_name} is where you'll find {varmint_village.description} like,")
