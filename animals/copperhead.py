@@ -1,8 +1,9 @@
 from animals import Animal
+from movements import Slithering
 
 
-class Copperhead(Animal):
+class Copperhead(Animal, Slithering):
 
     def __init__(self, name, species, food, chip_num):
-        super().__init__(name, species, food, chip_num)
-        self.slithering = True
+        Animal.__init__(self, name, species, food, chip_num)
+        Slithering.__init__(self)

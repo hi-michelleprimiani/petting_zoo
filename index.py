@@ -1,15 +1,15 @@
-from animals import Bass, Goldfish, Catfish, Koi, Trout, Mallard, Goose
-from animals import Copperhead, RatSnake, Python, Anaconda, Cobra
-from animals import Donkey, Llama, Goat, Chicken, Cow
-from attractions import PettingZoo, SnakePit, Wetlands
+from animals import Bass, Alligator, Goldfish, Catfish, Koi, Trout, Mallard, Goose, Donkey, Llama, Goat, Chicken, Cow, Copperhead, RatSnake, Python, Anaconda, Cobra
+from attractions import PettingZoo, Wetlands, SnakePit
 from datetime import date
 from animals import Animal
 
-
-larry = Llama("Larry", "Llama glama", "afternoon", "Llama Chow", 1234)
-donkey_kong = Donkey("Donkey Kong", "Domestic Donkey", "midday", "Hay", 2345)
-billy = Goat("Billy", "Domestic Goat", "afternoon", "Goat Feed", 3456)
-henrietta = Chicken("Henrietta", "Hen", "midday", "Chicken Feed", 4567)
+ally = Alligator("Ally", "Florida Alligator", "fish", 3458, 4)
+larry = Llama("Larry", "Llama glama", "afternoon", "Llama Chow", 1234, 4)
+donkey_kong = Donkey("Donkey Kong", "Domestic Donkey",
+                     "midday", "Hay", 2345, 4)
+billy = Goat("Billy", "Domestic Goat", "afternoon", "Goat Feed", 3456, 4)
+henrietta = Chicken("Henrietta", "Hen", "midday", "Chicken Feed", 4567, 2)
+dolly = Llama("Dolly", "miniature llama", "morning", "hay", 1033, 4)
 moo_moo = Cow("MooMoo", "Holstein Cow", "morning", "Grass", 5678, 4)
 slither = Copperhead("Slither", "American Copperhead", "Mice", 6789)
 ratty = RatSnake("Ratty", "Rat Snake", "Rats", 7890)
@@ -25,13 +25,7 @@ ducky = Mallard("Ducky", "Duck", "Poop", 4509, 2)
 goosey = Goose("Goosey", "Goose", "Poop", 5555, 2)
 lucy = Goose("Lucy", "Goose", "Grass", 4507, 2)
 lucy.swim_speed = "5 mph"
-ducky.run()
-goosey.swim()
 
-print(lucy)
-lucy.num_legs()
-moo_moo.num_legs()
-print(lucy.swim_speed)
 
 # attractions
 varmint_village = PettingZoo(
@@ -42,25 +36,34 @@ critter_cove = Wetlands(
     "Critter Cove", "aquatic life, both cute and interesting")
 
 
-varmint_village.add_animal(larry)
-varmint_village.add_animal(donkey_kong)
-varmint_village.add_animal(billy)
-varmint_village.add_animal(henrietta)
-varmint_village.add_animal(moo_moo)
+varmint_village.add_animal_pythonic(larry)
+varmint_village.add_animal_pythonic(donkey_kong)
+varmint_village.add_animal_pythonic(billy)
+varmint_village.add_animal_pythonic(henrietta)
+varmint_village.add_animal_pythonic(moo_moo)
+varmint_village.add_animal_pythonic(goosey)
+varmint_village.add_animal_pythonic(lucy)
+# varmint_village.add_animal_pythonic(dolly)
+# varmint_village.add_animal_type_check(dolly)
+varmint_village.add_animal_pythonic(ally)
+the_slither_inn.add_animal_pythonic(anna)
 
-the_slither_inn.add_animal(slither)
-the_slither_inn.add_animal(ratty)
-the_slither_inn.add_animal(monty)
-the_slither_inn.add_animal(anna)
-the_slither_inn.add_animal(king)
 
-critter_cove.add_animal(bassy)
-critter_cove.add_animal(goldie)
-critter_cove.add_animal(whiskers)
-critter_cove.add_animal(koiboi)
-critter_cove.add_animal(trouty)
-critter_cove.add_animal(goosey)
-critter_cove.add_animal(lucy)
+the_slither_inn.add_animal_pythonic(slither)
+the_slither_inn.add_animal_pythonic(ratty)
+the_slither_inn.add_animal_pythonic(monty)
+the_slither_inn.add_animal_pythonic(anna)
+the_slither_inn.add_animal_pythonic(king)
+
+critter_cove.add_animal_pythonic(bassy)
+critter_cove.add_animal_pythonic(goldie)
+critter_cove.add_animal_pythonic(whiskers)
+critter_cove.add_animal_pythonic(koiboi)
+critter_cove.add_animal_pythonic(trouty)
+
+
+for animal in varmint_village.animals:
+    print(animal)
 
 # petting zoo
 # print(

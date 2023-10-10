@@ -18,3 +18,4 @@ from .goat import Goat
 from .chicken import Chicken
 from .cow import Cow
 from .goose import Goose
+from .alligator import Alligator
