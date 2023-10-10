@@ -10,7 +10,7 @@ class Animal:
         self.date_added = date.today()
 
     def __str__(self):
-        return f"{self.name} is a {self.species}"
+        return f"{self.name} the {self.species}"
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
